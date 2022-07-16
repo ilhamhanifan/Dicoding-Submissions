@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    color: white;
+    background-color: #04293A;
+    margin: 0;
+}
+main{
+    overflow: auto;
+    padding: 35px;
+}
+h2,h3 {
+    text-align: left;
+}
+#jumbotron{
+    text-align: center;
+    padding: 37px;
+    background-color: #041C32;
+}
+header {
+    display: inline;
+}
+nav {
+    background-color: #064663;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+nav a {
+    font-size: 150%;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    color: gold;
+}
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #031e2b;
+    border-radius: 13px;
+    padding: 5px 15px 30px 15px;
+    margin-bottom: 10px;
+}
+.card h2:hover{
+    color: gold;
+}
+table {
+    border-collapse: collapse;
+    background-color: #024263;
+    margin: 0 auto;
+    font-size: 1.1em;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: left;
+}
+#feedback {
+    text-align: center;
+}
+#container {
+    display: flex;
+    justify-content: space-between;
+    float: left;
+    width: 100%;
+}
+#container p{
+    margin: 0;
+}
+#slider {
+    width: 100%;
+}
+button {
+    font-size: 1.5em;
+    margin-top: 15px;
+    width: 155px;
+    height: 30px;
+    border: 1px solid #031e2b;
+    background-color: gold;
+    color: #064663;
+    border-radius: 5px;
+}
+#content {
+    width: 70%;
+    float: left;
+}
+aside {
+    width: 30%;
+    float: right;
+    padding-left: 35px;
+}
+figure {
+    margin: 0;
+}
+img{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 5000px;
+}
+img:hover{
+    border: 3px dotted gold;
+}
+#emoticon {
+    font-size: 2em;
+}
+#burger {
+    display: none;
+}
+#burger div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+footer {
+    padding: 25px;
+    background-color: #041C32;
+    text-align: center;
+    font-weight: bold;
+}
+@media screen and (max-width: 1000px) {
+    #content, aside {
+        width: 100%;
+        padding: 0;
+   }
+    main {
+        padding: 0;
+        margin: 0;
+   }
+    nav li{
+        display: block;
+   }
+    table{
+        font-size: 0.9em;
+   }
+    footer p {
+        font-size: 0.6em;
+   }
+    #burger {
+        display: block;
+        margin-left: 50%;
+   }
+    .visible {
+        display: none;
+   }
+}
+@media screen and (max-width: 340px) {
+    #jumbotron h1 {
+        font-size: 29px;
+   }
+}
